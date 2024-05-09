@@ -71,6 +71,7 @@ button{
 
 .recommands h4 {
         font-size: 20px;
+        margin-bottom: 10px;
 }
 
 .recommands ul {
@@ -86,4 +87,9 @@ button{
     align-items: center; 
     justify-content: center; 
     border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.recommands li img:hover {
+    transform: scale(1.15);
 }
