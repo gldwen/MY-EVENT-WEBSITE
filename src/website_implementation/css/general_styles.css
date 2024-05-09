@@ -68,3 +68,22 @@ button{
     86% { transform: translateX(-66.66%); }
     100% { transform: translateX(0); }
 }
+
+.recommands h4 {
+        font-size: 20px;
+}
+
+.recommands ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommands img{
+    width: 200px; 
+    height: 200px; 
+    margin: 5px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 1px solid #ccc;
+}
