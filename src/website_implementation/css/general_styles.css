@@ -1,4 +1,4 @@
-html,body {
+html {
     background-color: rgba(125, 202, 195, 0.379);
     }
 
@@ -38,4 +38,33 @@ button{
 .logo{
     height: 40px;
     cursor: pointer;
+}
+
+.slider {
+    width: 600px;
+    height: auto;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 1800px;
+    animation: slide 9s infinite;
+}
+
+.slides img {
+    width: 600px;
+    height: auto;
+    flex-shrink: 0; 
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    33% { transform: translateX(-33.33%); }
+    53% { transform: translateX(-33.33%); }
+    66% { transform: translateX(-66.66%); }
+    86% { transform: translateX(-66.66%); }
+    100% { transform: translateX(0); }
 }
