@@ -111,4 +111,11 @@ footer {
 .playbarbtn {
     background-color: aliceblue;
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playbarbtn a {
+    color: black;
 }
