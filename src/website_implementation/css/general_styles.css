@@ -500,4 +500,5 @@ footer {
     height: 20px;
     padding: 7px;
     color: #333;
+    cursor: pointer;
 }
