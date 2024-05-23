@@ -11,10 +11,10 @@
         <div class="navbar">
             <img src="media/logo.png" class="logo">
             <ul>
-                <li><a href="#">RECOMMAND</a></li>
-                <li><a href="#">EXPLORE</a></li>
-                <li><a href="#">COMMUNITYT</a></li>
-                <li><a href="#">MY</a></li>
+                <li><a href="index.html">RECOMMAND</a></li>
+                <li><a href="index_explore.html">EXPLORE</a></li>
+                <li><a href="index_community.html">COMMUNITYT</a></li>
+                <li><a href="my.html">MY</a></li>
                 <li><input type="text" class="search-input" placeholder="search music"></li>
             </ul> 
             <ul class="nav navbar-nav navbar-right navbar-sm">               
@@ -540,15 +540,22 @@
         </div>     
         <!--music bar-->
         <footer>
-            <div class="playbar">
-                <div class="playbarbtn">
-                    <a herf="#">last song</a>
-                    <a herf="#">play</a>
-                    <a herf="#">pause</a>
-                    <a herf="#">next song</a>
-                    <input type="range" max="1" min="0" step="0.1">
-                </div>
+            <div class="footer">
+                <div class="footer_list">
+                    <div class="footer-btn">
+                        <a herf="#" class="prev"><img src="media/lastsong.icon.png" class="icon" alt="preview Song"></a>
+                        <a herf="#" class="play"><img src="media/play.icon.png" class="icon" alt="play Song"></a>
+                        <a herf="#" class="pause"><img src="media/pause.icon.png" class="icon" alt="pause Song"></a>
+                        <a herf="#" class="next"><img src="media/nextsong.icon.png" class="icon" alt="next Song"></a>
+                        <input type="range" max="1" min="0" step="0.1">
+                    </div>
+                    <div class="footer-music">
+                        <audio controls class="audio"></audio>
+                    </div>
+                    <div class="musicname"></div>
+                </div>          
             </div>
+                
         </footer> 
         <!-- site js-->
         <script src="js/site_interactions.js"></script>
