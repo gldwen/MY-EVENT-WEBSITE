@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/general_styles.css">
     </head>
     <body>
+        <!--navbar-->
         <div class="navbar">
             <img src="media/logo.png" class="logo">
             <ul>
@@ -14,15 +15,13 @@
                 <li><a href="#">EXPLORE</a></li>
                 <li><a href="#">COMMUNITYT</a></li>
                 <li><a href="#">MY</a></li>
+                <li><input type="text" class="search-input" placeholder="search music"></li>
             </ul> 
-            <input type="text" placeholder="Type to search" name = "search">
-            <button>search</button>
-            <ul class="nav navbar-nav navbar-right navbar-sm">
-                <li><input type="text" class="search-input" placeholder="歌名 / 歌手"></li>
-                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <ul class="nav navbar-nav navbar-right navbar-sm">               
                 <li><a href="login.html">Log in</a></li>        
             </ul>   
         </div> 
+        <!--slides-->
         <div class="slider">
             <div class="slides">
                 <img src="media/slide1.jpeg" alt="slide1">
@@ -30,90 +29,106 @@
                 <img src="media/slide3.jpeg" alt="slide3">
             </div>
         </div>
-        <div class="recommands">
-            <h4>Daily recommand</h4>
-            <ul>
-                <li>
-                    <img src="media/reco1.webp" alt="today recommand song1">
-                    <p>Daily recommand 1</p>
-                </li>
-                <li>
-                    <img src="media/reco2.webp" alt="today recommand song2">
-                    <p>Daily recommand 2</p>
-                </li>
-                <li>
-                    <img src="media/reco3.webp" alt="today recommand song3">
-                    <p>Daily recommand 3</p>
-                </li>
-                <li>
-                    <img src="media/reco4.webp" alt="today recommand song4">
-                    <p>Daily recommand 4</p>
-                </li>
-            </ul>
-        </div>  
-        <div class="recommands">
-            <h4>personal list</h4>
-            <ul>
-                <li>
-                    <img src="media/reco1.webp" alt="reco1">
-                    <p>Daily recommand 1</p>
-                </li>
-                <li>
-                    <img src="media/reco2.webp" alt="reco1">
-                    <p>Daily recommand 2</p>
-                </li>
-                <li>
-                    <img src="media/reco3.webp" alt="reco1">
-                    <p>Daily recommand 3</p>
-                </li>
-                <li>
-                    <img src="media/reco4.webp" alt="reco1">
-                    <p>Daily recommand 4</p>
-                </li>
-            </ul>
-        </div>  
-        <div class="recommands">
-            <h4>song list</h4>
-            <ul>
-                <li>
-                    <img src="media/reco1.webp" alt="reco1">
-                    <p>Daily recommand 1</p>
-                </li>
-                <li>
-                    <img src="media/reco2.webp" alt="reco1">
-                    <p>Daily recommand 2</p>
-                </li>
-                <li>
-                    <img src="media/reco3.webp" alt="reco1">
-                    <p>Daily recommand 3</p>
-                </li>
-                <li>
-                    <img src="media/reco4.webp" alt="reco1">
-                    <p>Daily recommand 4</p>
-                </li>
-            </ul>
-        </div>  
-        <div class="recommands">
-            <h4>ranking</h4>
-            <ul>
-                <li>
-                    <img src="media/reco1.webp" alt="reco1">
-                    <p>Daily recommand 1</p>
-                </li>
-                <li>
-                    <img src="media/reco2.webp" alt="reco1">
-                    <p>Daily recommand 2</p>
-                </li>
-                <li>
-                    <img src="media/reco3.webp" alt="reco1">
-                    <p>Daily recommand 3</p>
-                </li>
-                <li>
-                    <img src="media/reco4.webp" alt="reco1">
-                    <p>Daily recommand 4</p>
-                </li>
-            </ul>
-        </div> 
+        <!--main-->
+        <div class="container-sm box">
+            <div class="main">
+                <div class="main-wrap">
+                    <div class="content-box">
+                        <!--recommand-->
+                        <div class="hot-recommand">
+                            <div class="content-header">
+                              <h2><i class="fa fa-music red"></i>Daily Recommand</h2>
+                            </div>
+                            <ul class="music-list clearfix">
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco1.webp">
+                                  <a title="Whispers in the Wind" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Whispers in the Wind" href="#">Refrain</a>
+                                </p>
+                                <div class="author">Evelyn Mirage</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco2.webp">
+                                  <a title="Neon Heartbeat" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Neon Heartbeat" href="#">Neon Heartbeat</a>
+                                </p>
+                                <div class="author">Lucas Grey</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco3.webp">
+                                  <a title="Echoes of Tomorrow" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Echoes of Tomorrow" href="#">Echoes of Tomorrow</a>
+                                </p>
+                                <div class="author">Sara Bellum</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco4.webp">
+                                  <a title="Midnight Carousel" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Midnight Carousel" href="#">Midnight Carousel</a>
+                                </p>
+                                <div class="author">Dexter Blue</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco5.jpg">
+                                  <a title="Lost in the Pages" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Lost in the Pages" href="#">Lost in the Pages</a>
+                                </p>
+                                <div class="author">Harmony Fields</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco6.jpg">
+                                  <a title="Skyline Serenade" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Skyline Serenade" href="#">Skyline Serenade</a>
+                                </p>
+                                <div class="author">Julian Dawn</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco7.jpg">
+                                  <a title="Velvet Shadows" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Velvet Shadows" href="#">Velvet Shadows</a>
+                                </p>
+                                <div class="author">Isla Wren</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco8.jpg">
+                                  <a title="Faded - Alan Walker" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Faded - Alan Walker" href="#">Faded</a>
+                                </p>
+                                <div class="author">HaPBoy</div>
+                              </li>
+                            </ul>
+                          </div>
+                        <!--ranking--> 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--music bar-->
         <footer>
             <div class="playbar">
                 <div class="playbarbtn">
