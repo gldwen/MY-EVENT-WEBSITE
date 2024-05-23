@@ -10,13 +10,18 @@
         <div class="navbar">
             <img src="media/logo.png" class="logo">
             <ul>
-                <li><a href="index.html">RECOMMAND</a></li>
-                <li><a href="index_explore.html">EXPLORE</a></li>
+                <li><a href="#">RECOMMAND</a></li>
+                <li><a href="#">EXPLORE</a></li>
                 <li><a href="#">COMMUNITYT</a></li>
                 <li><a href="#">MY</a></li>
             </ul> 
             <input type="text" placeholder="Type to search" name = "search">
-            <button>search</button>   
+            <button>search</button>
+            <ul class="nav navbar-nav navbar-right navbar-sm">
+                <li><input type="text" class="search-input" placeholder="歌名 / 歌手"></li>
+                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href="login.html">Log in</a></li>        
+            </ul>   
         </div> 
         <div class="slider">
             <div class="slides">
@@ -50,7 +55,7 @@
             <h4>personal list</h4>
             <ul>
                 <li>
-                    <img src="media/reco1.webp" alt="recommand1">
+                    <img src="media/reco1.webp" alt="reco1">
                     <p>Daily recommand 1</p>
                 </li>
                 <li>
@@ -120,5 +125,7 @@
                 </div>
             </div>
         </footer> 
+        <!-- site js-->
+        <script src="js/site_interactions.js"></script>
     </body>
 </html>

@@ -17,6 +17,13 @@ html {
     background-color: rgb(59, 106, 207);
 }
 
+/*.navbar on the moblie phone*/
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display: nones;
+    }
+} 
+
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -25,7 +32,7 @@ html {
 
 .navbar ul li a{
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     font-size: 15px;
     display: block;
 }
