@@ -8,7 +8,8 @@
     </head>
     <body>
         <!--navbar-->
-        <div class="navbar">
+        <header class="flex-header-menu header-menu" aria-label="Main menu" aria-hidden="false">
+          <div class="navbar header_menu">
             <img src="media/logo.png" class="logo">
             <ul>
                 <li><a href="index.html">RECOMMAND</a></li>
@@ -16,11 +17,14 @@
                 <li><a href="index_community.html">COMMUNITYT</a></li>
                 <li><a href="my.html">MY</a></li>
                 <li><input type="text" class="search-input" placeholder="search music"></li>
-            </ul> 
+            </ul>
             <ul class="nav navbar-nav navbar-right navbar-sm">               
                 <li><a href="login.html">Log in</a></li>        
             </ul>   
         </div> 
+          <!-- header content -->
+        </header>
+        
         <!--slides-->
         <div class="slider">
             <div class="slides">
@@ -316,7 +320,7 @@
                                     <div class="info">
                                       <span class="date">05-25</span>
                                       <span class="avatar"><img
-                                          src="./storage/avatar/4.jpg"></span>
+                                          src="media/reco2.webp"></span>
                                     </div>
                                   </li>
                                   <li class="music-list-item">
@@ -424,6 +428,10 @@
                     </div>
                 </div>
             </div>
+            <aside class="flex-side-menu side-menu" aria-label="Main menu" aria-hidden="true">
+              <!-- side menu content -->
+
+            </aside>
             <!--sidebar-->
             <div class="sidebar" style="min-height: 1110px">
                 <div class="right-module">
@@ -539,6 +547,14 @@
               </div>
         </div>     
         <!--music bar-->
+        <img src="media/logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">RECOMMAND</a></li>
+                <li><a href="index_explore.html">EXPLORE</a></li>
+                <li><a href="index_community.html">COMMUNITYT</a></li>
+                <li><a href="my.html">MY</a></li>
+                <li><input type="text" class="search-input" placeholder="search music"></li>
+            </ul>
         <footer>
             <div class="footer">
                 <div class="footer_list">
@@ -559,5 +575,6 @@
         </footer> 
         <!-- site js-->
         <script src="js/site_interactions.js"></script>
+        <script src="js/aria.js"></script>
     </body>
 </html>

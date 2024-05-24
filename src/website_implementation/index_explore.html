@@ -1,22 +1,556 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>FunMusic</title>
         <link rel="stylesheet" href="css/general_styles.css">
     </head>
     <body>
+        <!--navbar-->
         <div class="navbar">
             <img src="media/logo.png" class="logo">
             <ul>
                 <li><a href="index.html">RECOMMAND</a></li>
                 <li><a href="index_explore.html">EXPLORE</a></li>
-                <li><a href="#">COMMUNITYT</a></li>
-                <li><a href="#">MY</a></li>
-            </ul> 
-            <input type="text" placeholder="Type to search" name = "search">
-            <button>search</button>   
+                <li><a href="index_community.html">COMMUNITYT</a></li>
+                <li><a href="my.html">MY</a></li>
+                <li><input type="text" class="search-input" placeholder="search music"></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right navbar-sm">               
+                <li><a href="login.html">Log in</a></li>        
+            </ul>   
         </div> 
+        <!--main-->
+        <div class="container-sm box">
+            <div class="main">
+                <div class="main-wrap">
+                    <div class="content-box">
+                        <!--recommand-->
+                        <div class="hot-recommand">
+                            <div class="content-header">
+                              <h2><i class="fa fa-music red"></i>Daily Recommand</h2>
+                            </div>
+                            <ul class="music-list clearfix">
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco1.webp">
+                                  <a title="Whispers in the Wind" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Whispers in the Wind" href="#">Refrain</a>
+                                </p>
+                                <div class="author">Evelyn Mirage</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco2.webp">
+                                  <a title="Neon Heartbeat" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Neon Heartbeat" href="#">Neon Heartbeat</a>
+                                </p>
+                                <div class="author">Lucas Grey</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco3.webp">
+                                  <a title="Echoes of Tomorrow" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Echoes of Tomorrow" href="#">Echoes of Tomorrow</a>
+                                </p>
+                                <div class="author">Sara Bellum</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco4.webp">
+                                  <a title="Midnight Carousel" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Midnight Carousel" href="#">Midnight Carousel</a>
+                                </p>
+                                <div class="author">Dexter Blue</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco5.jpg">
+                                  <a title="Lost in the Pages" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Lost in the Pages" href="#">Lost in the Pages</a>
+                                </p>
+                                <div class="author">Harmony Fields</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco6.jpg">
+                                  <a title="Skyline Serenade" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Skyline Serenade" href="#">Skyline Serenade</a>
+                                </p>
+                                <div class="author">Julian Dawn</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco7.jpg">
+                                  <a title="Velvet Shadows" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Velvet Shadows" href="#">Velvet Shadows</a>
+                                </p>
+                                <div class="author">Isla Wren</div>
+                              </li>
+                              <li>
+                                <div class="u-cover">
+                                  <img src="media/reco8.jpg">
+                                  <a title="Faded - Alan Walker" href="#" class="msk"></a>
+                                </div>
+                                <p class="dec">
+                                  <a title="Chasing Daylight" href="#">Chasing Daylight</a>
+                                </p>
+                                <div class="author">Theo Knight</div>
+                              </li>
+                            </ul>
+                        </div>
+                        <!--ranking-->
+                        <div style="clear: both;"></div>
+                        <div class="content-header">
+                            <h2><i class="fa fa-music red"></i>Rank</h2>
+                          </div>
+                        <div class="category">
+                            <div class="row">
+                              <div class="category-music-list">
+                                <div class="category-header">
+                                  pop
+                                </div>
+                                <ul>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">1</span>
+                                        <a href="#" title="Refrain">Refrain</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">12-26</span>
+                                      <span class="avatar"><img
+                                          src="media/reco1.webp"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">2</span>
+                                        <a href="#" title="Lost in the Pages">Lost in the Pages</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">12-20</span>
+                                      <span class="avatar"><img
+                                          src="media/reco4.webp"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">3</span>
+                                        <a href="#" title="Tassel">Tassel</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">12-25</span>
+                                      <span class="avatar"><img
+                                          src="media/reco6.jpg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">4</span>
+                                        <a href="#" title="Chasing Daylight">Chasing Daylight</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">05-17</span>
+                                      <span class="avatar"><img
+                                          src="media/slide1.jpeg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">5</span>
+                                        <a href="#" title="The truth that you leave">The truth that you leave</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">12-13</span>
+                                      <span class="avatar"><img
+                                          src="media/reco1.webp"></span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="category-music-list">
+                                <div class="category-header">
+                                  rock
+                                </div>
+                                <ul>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">1</span>
+                                        <a href="#" title="red">red</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">11-12</span>
+                                      <span class="avatar"><img
+                                          src="media/slide3.jpeg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">2</span>
+                                        <a href="#" title="Starlit Memoir">Starlit Memoir</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">11-22</span>
+                                      <span class="avatar"><img
+                                          src="media/reco6.jpg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">3</span>
+                                        <a href="#" title="Vincent Moon">Vincent Moon</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">12-23</span>
+                                      <span class="avatar"><img
+                                          src="media/slide2.jpeg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">4</span>
+                                        <a href="#" title="Luna Pierce"> Luna Pierce</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">12-22</span>
+                                      <span class="avatar"><img
+                                          src="media/slide3.jpeg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">5</span>
+                                        <a href="#" title="Dreamers at Dawn">Dreamers at Dawn</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">12-21</span>
+                                      <span class="avatar"><img
+                                          src="media/slide3.jpeg"></span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="category-music-list">
+                                <div class="category-header">
+                                  popular
+                                </div>
+                                <ul>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">1</span>
+                                        <a href="#" title="Golden Echo">Golden Echo</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">11-23</span>
+                                      <span class="avatar"><img
+                                          src="media/reco7.jpg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">2</span>
+                                        <a href="#" title="Frost on the Vine">Frost on the Vine</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">11-14</span>
+                                      <span class="avatar"><img
+                                          src="media/reco4.webp"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">3</span>
+                                        <a href="#" title="Eliza Thorn">Eliza Thorn</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">05-25</span>
+                                      <span class="avatar"><img
+                                          src="media/reco2.webp"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">4</span>
+                                        <a href="#" title="Velvet Shadows">Velvet Shadows</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">11-25</span>
+                                      <span class="avatar"><img
+                                          src="media/reco7.jpg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">5</span>
+                                        <a href="#" title="Lost in the Pages">Lost in the Pages</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">12-17</span>
+                                      <span class="avatar"><img
+                                          src="media/slide3.jpeg"></span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="category-music-list">
+                                <div class="category-header">
+                                  classic
+                                </div>
+                                <ul>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">1</span>
+                                        <a href="#" title="Because of You">Because of You</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">11-23</span>
+                                      <span class="avatar"><img
+                                          src="media/reco4.webp"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">2</span>
+                                        <a href="#" title="Easy Breeze">Easy Breeze</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">11-12</span>
+                                      <span class="avatar"><img
+                                          src="media/slide3.jpeg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">3</span>
+                                        <a href="#" title="Radio">Radio</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">12-13</span>
+                                      <span class="avatar"><img
+                                          src="media/reco6.jpg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">4</span>
+                                        <a href="#" title="Remember">Remember</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">11-25</span>
+                                      <span class="avatar"><img
+                                          src="media/slide3.jpeg"></span>
+                                    </div>
+                                  </li>
+                                  <li class="music-list-item">
+                                    <div class="title">
+                                      <div class="title_wrap">
+                                        <span class="rank">5</span>
+                                        <a href="#" title="Faded">Faded</a>
+                                      </div>
+                                    </div>
+                                    <div class="info">
+                                      <span class="date">12-24</span>
+                                      <span class="avatar"><img
+                                          src="media/reco1.webp"></span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--sidebar-->
+            <div class="sidebar" style="min-height: 1110px">
+                <div class="right-module">
+                  <h4>Personal channel</h4>
+                  <ul class="new-artist-songs">
+                    <li class="artist-song">
+                      <div class="avatar">
+                        <img src="media/reco8.jpg">
+                      </div>
+                      <div class="info">
+                        <h3>Rahin</h3>
+                        <p>Haqw    <span>1595</span>times</p>
+                      </div>
+                      <a href="#" title="Refrain" class="cover-link"></a>
+                    </li>
+                    <li class="artist-song">
+                      <div class="avatar">
+                        <img src="media/reco6.jpg">
+                      </div>
+                      <div class="info">
+                        <h3>A Little Story</h3>
+                        <p>LoveMiao    <span>1052</span>times</p>
+                      </div>
+                      <a href="#" title="A Little Story" class="cover-link"></a>
+                    </li>
+                    <li class="artist-song">
+                      <div class="avatar">
+                        <img src="media/slide3.jpeg">
+                      </div>
+                      <div class="info">
+                        <h3>Riverside Reverie</h3>
+                        <p>Annie <span>349</span>times</p>
+                      </div>
+                      <a href="#" title="Riverside Reverie" class="cover-link"></a>
+                    </li>
+                    <li class="artist-song">
+                      <div class="avatar">
+                        <img src="media/reco6.jpg">
+                      </div>
+                      <div class="info">
+                        <h3>Easy Breeze</h3>
+                        <p>Hannah  <span>420</span>times</p>
+                      </div>
+                      <a href="#" title="Easy Breeze" class="cover-link"></a>
+                    </li>
+                    <li class="artist-song">
+                      <div class="avatar">
+                        <img src="media/slide3.jpeg">
+                      </div>
+                      <div class="info">
+                        <h3>Dreamers at Dawn</h3>
+                        <p>Wing  <span>1356</span>times</p>
+                      </div>
+                      <a href="#" title="Dreamers at Dawn" class="cover-link"></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right-module">
+                  <h4>Song list</h4>
+                  <ul class="new-artist-songs">
+                    <li class="artist-song">
+                      <div class="avatar">
+                        <img src="media/reco7.jpg">
+                      </div>
+                      <div class="info">
+                        <h3>Golden Echo</h3>
+                        <p>Golden Echo  <span>1167</span>times</p>
+                      </div>
+                      <a href="#" title="Golden Echo" class="cover-link"></a>
+                    </li>
+                    <li class="artist-song">
+                      <div class="avatar">
+                        <img src="media/reco6.jpg">
+                      </div>
+                      <div class="info">
+                        <h3>Remember</h3>
+                        <p>Harry   <span>1008</span>times</p>
+                      </div>
+                      <a href="#" title="Remember" class="cover-link"></a>
+                    </li>
+                    <li class="artist-song">
+                      <div class="avatar">
+                        <img src="media/slide2.jpeg">
+                      </div>
+                      <div class="info">
+                        <h3>Skyline Serenade</h3>
+                        <p>Julian Dawn / <span>864</span>times</p>
+                      </div>
+                      <a href="#" title="Skyline Serenade" class="cover-link"></a>
+                    </li>
+                    <li class="artist-song">
+                      <div class="avatar">
+                        <img src="media/reco2.webp">
+                      </div>
+                      <div class="info">
+                        <h3>Chasing Daylight</h3>
+                        <p>Hapon  <span>838</span>times</p>
+                      </div>
+                      <a href="#" title="Chasing Daylight" class="cover-link"></a>
+                    </li>
+                    <li class="artist-song">
+                      <div class="avatar">
+                        <img src="media/reco4.webp">
+                      </div>
+                      <div class="info">
+                        <h3>Because of You</h3>
+                        <p>Octobse   <span>821</span>times</p>
+                      </div>
+                      <a href="#" title="Because of You" class="cover-link"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </div>     
+        <!--music bar-->
+        <footer>
+            <div class="footer">
+                <div class="footer_list">
+                    <div class="footer-btn">
+                        <a herf="#" class="prev"><img src="media/lastsong.icon.png" class="icon" alt="preview Song"></a>
+                        <a herf="#" class="play"><img src="media/play.icon.png" class="icon" alt="play Song"></a>
+                        <a herf="#" class="pause"><img src="media/pause.icon.png" class="icon" alt="pause Song"></a>
+                        <a herf="#" class="next"><img src="media/nextsong.icon.png" class="icon" alt="next Song"></a>
+                        <input class="volume" type="range" max="1" min="0" step="0.1"><a>volume</a>
+                    </div>
+                    <div class="footer-music">
+                        <audio controls class="audio"></audio>
+                    </div>
+                    <div class="musicname"></div>
+                </div>          
+            </div>
+                
+        </footer> 
+        <!-- site js-->
+        <script src="js/site_interactions.js"></script>
     </body>
+</html>
 </html>

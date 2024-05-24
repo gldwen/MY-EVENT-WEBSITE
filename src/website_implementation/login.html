@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>FunMusic</title>
-        <link rel="stylesheet" href="css/general_styles.css">
+      <meta charset="utf-8">
+      <title>Login Fun Music</title>
+      <link type="text/css" rel="stylesheet" href="css/login_style.css" /> 
     </head>
-    <body>
-        <div class="navbar">
-            <img src="media/logo.png" class="logo">
-            <ul>
-                <li><a href="index.html">RECOMMAND</a></li>
-                <li><a href="index_explore.html">EXPLORE</a></li>
-                <li><a href="#">COMMUNITYT</a></li>
-                <li><a href="#">MY</a></li>
-            </ul> 
-            <input type="text" placeholder="Type to search" name = "search">
-            <button>search</button>   
-        </div> 
+    <body   >
+     <div class="load" >
+       <img src="#">
+     </div>
+     <div id="content" > 
+          <div class="login-wrap">
+              <div class="login-con">
+				      <img src="media/logo.png"/ class="logo">
+                  <h1>Login Fun Music</h1>
+                  <form id="login_form">  
+                    <div class="login-same">
+                      <dl>
+                        <dt>account:</dt>
+                        <dd><input type="text" class="text" name="userName" value="" id="userName" placeholder="Email/Phone/UserName"></dd> 
+                      </dl>
+                       <dl>
+                        <dt>password:</dt>
+                        <dd><input type="password" class="text" value="" id="password" placeholder="please enter the password"></dd>
+                      </dl>
+                       <dl>                     
+                          <dt>&nbsp;</dt>
+                        <dd>
+						<a href="#">
+						 <input type="button" class="login_ent" id="loginBtn"value="login" onclick="location.href='index.html'" >
+						</a>
+                        </dd>
+						<dd>
+						<a href="create_account.html">
+						 <input type="button" class="login_ent" id="loginBtn"value="create account" onclick="location.href='zhuce.html'" >
+						</a>
+						</dd>
+                      </dl>
+
+                    </div>
+                  </form>
+
+              </div>
+          </div>
+             
+     </div>
     </body>
 </html>

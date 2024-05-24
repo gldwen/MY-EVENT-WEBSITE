@@ -17,6 +17,7 @@ html {
     background-color: rgb(59, 106, 207);
 }
 
+
 /*.navbar on the moblie phone*/
 @media only screen and (max-width: 600px) {
     .navbar{

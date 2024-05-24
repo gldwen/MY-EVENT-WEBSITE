@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>FunMusic</title>
+        <link rel="stylesheet" href="css/my.css">
         <link rel="stylesheet" href="css/general_styles.css">
     </head>
     <body>
+        <!--navbar-->
         <div class="navbar">
             <img src="media/logo.png" class="logo">
             <ul>
@@ -14,9 +16,81 @@
                 <li><a href="index_explore.html">EXPLORE</a></li>
                 <li><a href="index_community.html">COMMUNITYT</a></li>
                 <li><a href="my.html">MY</a></li>
-            </ul> 
-            <input type="text" placeholder="Type to search" name = "search">
-            <button>search</button>   
+                <li><input type="text" class="search-input" placeholder="search music"></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right navbar-sm">               
+                <li><a href="login.html">Log in</a></li>        
+            </ul>   
         </div> 
+        <h4>My music list</h4>
+        <!--cards-->
+        <div id="container">
+            <div class="card">
+              <img src="media/reco2.webp" alt="Rock">
+              <div class="card__details">
+                <span class="tag">Rock</span>
+                <span class="tag">Passion</span>
+                <div class="name">Rock time</div>
+                <p>This rock playlist features a blend of classic and modern rock 
+                    masterpieces, showcasing the diversity and power of rock music. 
+                    From the legendary acts of the 20th century like The Beatles and 
+                    Led Zeppelin to contemporary trailblazers like Imagine Dragons 
+                    and Foo Fighters, each track is filled with passion and creativity..</p>
+                <button>Listen now</button>
+              </div>
+            </div>
+            <div class="card">
+                <img src="media/reco6.jpg" alt="Brain">
+                <div class="card__details">
+                  <span class="tag">pop</span>
+                  <span class="tag">vibrant</span>
+                  <div class="name">pop now</div>
+                  <p>his pop playlist is a curated selection of unforgettable 
+                    hits that span from timeless classics to the latest chart-toppers, 
+                    each embodying the charm and innovation of pop music. Featuring dance
+                    tracks by Michael Jackson, sweet melodies from Taylor Swift, and dynamic 
+                    rhythms by BTS, there's something here to captivate every listener.</p>
+                  <button>Listen now</button>
+                </div>
+          
+              </div>
+              <div class="card">
+                <img src="media/reco8.jpg" alt="Brain">
+                <div class="card__details">
+                  <span class="tag">classic</span>
+                  <span class="tag">relax</span>
+                  <div class="name">slow time</div>
+                  <p>This classical music playlist is a splendid journey through the ages, 
+                    featuring works from the Baroque period to the Romantic era and beyond. 
+                    It includes masterpieces by renowned composers like Bach, Mozart, Beethoven, 
+                    and Tchaikovsky, each piece chosen for its emotional depth and exquisite 
+                    craftsmanship.</p>
+                  <button>Listen now</button>
+                </div>
+          
+              </div>
+          </div>
+        <!--music bar-->
+        <footer>
+            <div class="footer">
+                <div class="footer_list">
+                    <div class="footer-btn">
+                        <a herf="#" class="prev"><img src="media/lastsong.icon.png" class="icon" alt="preview Song"></a>
+                        <a herf="#" class="play"><img src="media/play.icon.png" class="icon" alt="play Song"></a>
+                        <a herf="#" class="pause"><img src="media/pause.icon.png" class="icon" alt="pause Song"></a>
+                        <a herf="#" class="next"><img src="media/nextsong.icon.png" class="icon" alt="next Song"></a>
+                        <input class="volume" type="range" max="1" min="0" step="0.1"><a>volume</a>
+                    </div>
+                    <div class="footer-music">
+                        <audio controls class="audio"></audio>
+                    </div>
+                    <div class="musicname"></div>
+                </div>          
+            </div>
+                
+        </footer> 
+        <!-- site js-->
+        <script src="js/site_interactions.js"></script>
+        <script src="js/my.js"></script>
     </body>
 </html>
